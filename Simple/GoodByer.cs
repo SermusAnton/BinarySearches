@@ -9,7 +9,12 @@ namespace Simple {
         private string who;
         public string Message {
             get { return "Привет "+who; }
-            set { who = value; }
+            set {
+                if (value == "") {
+                    throw new Exception("No person to say goodbay!!!");
+                }
+                who = value;
+            }
         }
         public GoodByer() {
             who = "Anonim";
