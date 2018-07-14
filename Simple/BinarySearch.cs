@@ -19,15 +19,15 @@ namespace Simple {
             return Bisect(findValue,0,sortedArray.Length-1,sortedArray);
         }
         public int Bisect(int findValue, int startInd, int endInd, int[] sortedArray) {
-            if (startInd >= endInd) {
+            if (startInd > endInd) {
                 return -1;
             }
             int middleInd = (startInd + endInd) / 2;
             if (findValue < sortedArray[middleInd]) {
-                return Bisect(findValue, startInd, middleInd, sortedArray);
+                return Bisect(findValue, startInd, middleInd-1, sortedArray);
             }
             if (findValue > sortedArray[middleInd]) {
-                return Bisect(findValue, middleInd, endInd, sortedArray);
+                return Bisect(findValue, middleInd+1, endInd, sortedArray);
             }
             if (findValue == sortedArray[middleInd]) {
                 return middleInd;
