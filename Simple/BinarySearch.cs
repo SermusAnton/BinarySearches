@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Simple {
+namespace BinarySearch {
     /// <summary>
     /// http://codekata.com/kata/kata02-karate-chop/
     /// </summary>

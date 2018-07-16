@@ -47,13 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestBinarySearch.cs" />
+    <Compile Include="Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Simple\Simple.csproj">
+    <ProjectReference Include="..\Simple\BinarySearch.csproj">
       <Project>{72099c2f-bb51-4a04-894d-bf5d02929cb0}</Project>
-      <Name>Simple</Name>
+      <Name>BinarySearch</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

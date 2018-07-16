@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Simple {
+namespace BinarySearch {
     class Program {
         const int ARRAYLEN = 100; 
         const int MULT = 4; // Множитель разброса произвольных значений

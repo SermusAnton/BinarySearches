@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Simple;
+using BinarySearch;
 using NUnit.Framework;
 
-namespace TestSimple
+namespace Test
 {
     [TestFixture]
-    public class TestBinarySearch
+    public class Test
     {
-        BinarySearch binarySearch = new BinarySearch();
+        BinarySearch.BinarySearch binarySearch = new BinarySearch.BinarySearch();
         #region Группа 1
         [Test()]
         public void LengthNullElement() {
