@@ -8,6 +8,8 @@ namespace Simple {
     class Program {
         const int ARRAYLEN = 100; 
         const int MULT = 4; // Множитель разброса произвольных значений
+        static BinarySearch binarySearch = new BinarySearch();
+
         static void Main(string[] args) {
             Random random = new Random();
             int[] arrayRandom = new int[ARRAYLEN];
@@ -28,7 +30,7 @@ namespace Simple {
                 Console.WriteLine("Введено не число!");
                 return;
             }
-            BinarySearch binarySearch = new BinarySearch();
+            
             Console.WriteLine("Индекс искомого элемента:");
             Console.Write(binarySearch.Find(findValue,arrayRandom));
             Console.ReadKey();
