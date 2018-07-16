@@ -15,7 +15,7 @@ namespace Simple {
             }
             int startIndex = 0;
             int endIndex = sortedArray.Length - 1;
-            while (startIndex<endIndex) {
+            while (startIndex<=endIndex) {
                 int middleIndex = (startIndex + endIndex) / 2;
                 if (findValue < sortedArray[middleIndex]) {
                     endIndex = middleIndex - 1;
