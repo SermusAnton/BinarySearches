@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinarySearch {
+namespace Simple {
     class Program {
         const int ARRAYLEN = 100; 
         const int MULT = 4; // Множитель разброса произвольных значений
-        static BinarySearch binarySearch = new BinarySearch();
+        static BinarySearchRecursion binarySearch = new BinarySearchRecursion();
 
         static void Main(string[] args) {
             Random random = new Random();

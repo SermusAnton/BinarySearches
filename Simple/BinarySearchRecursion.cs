@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinarySearch {
+namespace Simple {
     /// <summary>
     /// http://codekata.com/kata/kata02-karate-chop/
     /// </summary>
-    public class BinarySearch {
+    public class BinarySearchRecursion {
         public int Find(int findValue, int[] sortedArray) {
             if (sortedArray == null || sortedArray.Length == 0 || findValue < sortedArray[0]|| findValue>sortedArray[sortedArray.Length-1]) { 
                 return -1;
