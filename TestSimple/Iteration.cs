@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using Simple;
 
 namespace Test {
     class Iteration {
-        Simple.BinarySearchRecursion binarySearch = new Simple.BinarySearchRecursion();
+        BinarySearchIteration binarySearch = new BinarySearchIteration();
         #region Группа 1
         [Test()]
         public void LengthNullElement() {
