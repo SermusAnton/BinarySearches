@@ -7,6 +7,7 @@ using NUnit.Framework;
 using Simple;
 
 namespace Test {
+    [TestFixture]
     class Iteration {
         BinarySearchIteration binarySearch = new BinarySearchIteration();
         #region Группа 1

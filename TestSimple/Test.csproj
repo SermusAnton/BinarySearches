@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -48,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Iteration.cs" />
+    <Compile Include="IterationForStrategy.cs" />
     <Compile Include="Recursion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,6 +57,10 @@
     <ProjectReference Include="..\Simple\Simple.csproj">
       <Project>{72099c2f-bb51-4a04-894d-bf5d02929cb0}</Project>
       <Name>Simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Strategy\Strategy.csproj">
+      <Project>{6cb03948-f7e8-4242-b975-b5b16f482646}</Project>
+      <Name>Strategy</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
