@@ -3,19 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Simple;
 using NUnit.Framework;
+using Simple;
 
-namespace Test
-{
+namespace Test {
     [TestFixture]
-    public class Recursion {
-
-        BinarySearchRecursion binarySearch = new BinarySearchRecursion();
+    class SimpleIteration {
+        Simple.Iteration binarySearch = new Simple.Iteration();
         #region Группа 1
         [Test()]
         public void LengthNullElement() {
-            Assert.AreEqual(-1, binarySearch.Find(3, new int[]{ }));
+            Assert.AreEqual(-1, binarySearch.Find(3, new int[] { }));
         }
         [Test()]
         public void LengthOneElement() {
@@ -29,7 +27,7 @@ namespace Test
         #region Группа 2
         [Test()]
         public void FindIfFistIndex() {
-            Assert.AreEqual(0, binarySearch.Find(1, new int[] { 1,3,5 }));
+            Assert.AreEqual(0, binarySearch.Find(1, new int[] { 1, 3, 5 }));
         }
         [Test()]
         public void FindIndex3() {
@@ -59,7 +57,7 @@ namespace Test
         #region Группа 3
         [Test()]
         public void FindIndexEvenArray1() {
-            Assert.AreEqual(0, binarySearch.Find(1, new int[] { 1, 3, 5, 7}));
+            Assert.AreEqual(0, binarySearch.Find(1, new int[] { 1, 3, 5, 7 }));
         }
         [Test()]
         public void FindIndexEvenArray3() {

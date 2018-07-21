@@ -49,8 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinarySearchIteration.cs" />
-    <Compile Include="BinarySearchRecursion.cs" />
+    <Compile Include="Iteration.cs" />
+    <Compile Include="Recursion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

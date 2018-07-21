@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Simple {
-    public class BinarySearchIteration {
+    public class Iteration {
         public int Find(int findValue, int[] sortedArray) {
             if (sortedArray == null || sortedArray.Length == 0 || findValue < sortedArray[0] || findValue > sortedArray[sortedArray.Length - 1]) {
                 return -1;

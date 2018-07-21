@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BSIForStrategy.cs" />
+    <Compile Include="Iteration.cs" />
+    <Compile Include="Recursion.cs" />
     <Compile Include="IntBSI.cs" />
     <Compile Include="ISeeker.cs" />
     <Compile Include="Program.cs" />

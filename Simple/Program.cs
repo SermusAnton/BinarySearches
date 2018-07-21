@@ -8,7 +8,7 @@ namespace Simple {
     class Program {
         const int ARRAYLEN = 100; 
         const int MULT = 4; // Множитель разброса произвольных значений
-        static BinarySearchRecursion binarySearch = new BinarySearchRecursion();
+        static Recursion binarySearch = new Recursion();
 
         static void Main(string[] args) {
             Random random = new Random();

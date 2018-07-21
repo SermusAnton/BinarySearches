@@ -48,9 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Iteration.cs" />
-    <Compile Include="IterationForStrategy.cs" />
-    <Compile Include="Recursion.cs" />
+    <Compile Include="SimpleIteration.cs" />
+    <Compile Include="StrategyRecursion.cs" />
+    <Compile Include="StrategyIteration.cs" />
+    <Compile Include="SimpleRecursion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
