@@ -20,7 +20,7 @@ namespace Test {
             // int index = binarySearch.Find (findValue, sortedArray);
             #region Группа 1
             [Test()]
-            public void LengthNullElement() {
+            public void A1LengthNullElement() {
                 Assert.AreEqual(-1, binarySearch.Find(3, new int[] { }));
             }
             [Test()]

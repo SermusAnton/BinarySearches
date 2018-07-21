@@ -11,6 +11,7 @@ namespace Strategy {
         private int start=0;
         private int end=0;
         private int operations = 0;
+        private int result = -1;
         
 
         public BSIForStrategy(ISeeker itsISeeker) {
@@ -23,10 +24,8 @@ namespace Strategy {
             start = itsSortedObj.GetStart();
             end = itsSortedObj.GetEnd();
             operations = 0;
-            if (itsSortedObj.CompareTo(start) < 0) return -1;
-            if (itsSortedObj.CompareTo(start) == 0) return start;
-            if (itsSortedObj.CompareTo(end) > 0) return -1;
-            if (itsSortedObj.CompareTo(end) == 0) return end;
+           
+            if (!IsCanStart()) return result;
 
             while (start < end) {
                 ++operations;
@@ -36,10 +35,36 @@ namespace Strategy {
                 } else if (itsSortedObj.CompareTo(middle) > 0) {
                     start = middle + 1;
                 } else {
-                    return middle;
+                    result = middle;
+                    return result;
                 }            
             }
             return -1;
         }
+
+        private bool IsCanStart() {
+            if (end==-1) {
+                result = -1;
+                return false;
+            }
+            if (itsSortedObj.CompareTo(start) < 0) {
+                result = -1;
+                return false;
+            }
+            if (itsSortedObj.CompareTo(start) == 0) {
+                result = start;
+                return false;
+            }
+            if (itsSortedObj.CompareTo(end) > 0) {
+                result = -1;
+                return false;
+            }
+            if (itsSortedObj.CompareTo(end) == 0) {
+                result = end;
+                return false;
+            }
+            return true;
+        }
+
     }
 }
