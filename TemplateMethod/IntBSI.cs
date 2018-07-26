@@ -18,11 +18,6 @@ namespace TemplateMethod {
             return findValue == sortedArray[index];
         }
 
-        protected override bool IsCanStart() {
-        //    if (end<start) return false;
-            return IsFindValueGreater(start) && !IsFindValueGreater(end);
-        }
-
         public int Find(int findValue, int[] sortedArray) {
             this.sortedArray = sortedArray;
             this.findValue = findValue;

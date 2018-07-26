@@ -32,7 +32,13 @@ namespace TemplateMethod
             }
             return -1;
         }
-        protected abstract bool IsCanStart();
+
+        private bool IsCanStart() {
+            if (end < start) return false;
+            if (IsFindValue(start)) return true;
+            return IsFindValueGreater(start) && !IsFindValueGreater(end);
+        }
+
         protected abstract bool IsFindValue(int index);
         protected abstract bool IsFindValueGreater(int index);
     }
