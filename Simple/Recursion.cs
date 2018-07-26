@@ -8,9 +8,9 @@ namespace Simple {
     /// <summary>
     /// http://codekata.com/kata/kata02-karate-chop/
     /// </summary>
-    public class BinarySearch {
+    public class Recursion {
         public int Find(int findValue, int[] sortedArray) {
-            if (sortedArray == null || sortedArray.Length == 0) { 
+            if (sortedArray == null || sortedArray.Length == 0 || findValue < sortedArray[0]|| findValue>sortedArray[sortedArray.Length-1]) { 
                 return -1;
             }
             if (sortedArray[0] == findValue) {
